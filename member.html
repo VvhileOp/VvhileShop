@@ -1,0 +1,179 @@
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>VvhileShop</title>
+	<link rel="stylesheet" href="layout.css">
+	<style>
+		body { 
+			background: linear-gradient(to top, #666, #222);
+			margin: 0; 
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	</style>
+</head>
+<body>
+
+<nav>
+	<div class="top-nav">
+		<div class="top-links">
+			<ul>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Join Us</a></li>
+				<li><a href="#">Sign In</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="main-nav">
+		<a href="#" class="logo-main">
+			<img src="logo1.png" alt="main-logo" style="height:50px;">
+		</a>
+		<div class="main-links">	
+			<ul>
+				<li><a href="steam.html">Home</a></li>
+				
+				<li class="dropdown">
+				<a href="#" class="dropbtn">Store</a>
+					<ul class="submenu">
+
+						<li><a href="promo.html">Discounts Party</a></li>
+						<li><a href="member.html">Vip Member</a></li>
+						<li><a href="event.html">Event</a></li>
+					</ul>	
+				</li>
+				<li class="dropdown">
+				<a href="#" class="dropbtn">Games</a>
+					<ul class="submenu">
+						<li><a href="freegame.html">Free Games</a></li>
+						<li><a href="premiumgame.html">Premium Games</a></li>
+						<li class="dropdown categories"><a href="#" class="dropbtn">Categories</a>
+							<ul>
+								<li><a href="action.html">Action/FPS</a></li>
+								<li><a href="horror.html">Horror</a></li>
+								<li><a href="adventure.html">Adventure</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>	
+</nav>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VvhileShop - VIP Member</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #444, #111);
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+    }
+
+    .member-section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+
+    .member-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .member-cards {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .member-card {
+      background: #222;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .member-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.7);
+    }
+
+    .member-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .member-card h2 {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .member-card p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    .member-card button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #ff5722;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .member-card button:hover {
+      background: #e64a19;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="member-section">
+    <h1>✨ VvhileShop Membership ✨</h1>
+    <p>Pilih paket membership favoritmu untuk dapatkan keuntungan eksklusif!</p>
+
+    <div class="member-cards">
+      <!-- Free Member -->
+      <div class="member-card">
+        <img src="free.png" alt="Free Member">
+        <h2>Free Member</h2>
+        <p>Akses gratis dengan penawaran terbatas.</p>
+        <button>Gabung Gratis</button>
+      </div>
+
+      <!-- VIP Member -->
+      <div class="member-card">
+        <img src="vip.png" alt="VIP Member">
+        <h2>VIP Member</h2>
+        <p>Diskon eksklusif, akses early game, dan hadiah bulanan.</p>
+        <button>Join VIP</button>
+      </div>
+
+      <!-- Premium Member -->
+      <div class="member-card">
+        <img src="premium.png" alt="Premium Member">
+        <h2>Premium Member</h2>
+        <p>Nikmati semua keuntungan VIP + konten premium eksklusif.</p>
+        <button>Upgrade Premium</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
