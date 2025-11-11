@@ -1,0 +1,116 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discount Party - VvhileShop</title>
+  <link rel="stylesheet" href="layout.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #222, #111);
+      color: #fff;
+    }
+    .banner {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #ff004c, #ff9100);
+      font-size: 2.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff004c; }
+      to { text-shadow: 0 0 20px #ff9100, 0 0 30px #fff; }
+    }
+    .discount-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .discount-card {
+      background: #222;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255,0,100,0.4);
+      transition: transform 0.3s;
+      position: relative;
+    }
+    .discount-card:hover {
+      transform: scale(1.05);
+    }
+    .discount-card img {
+      width: 100%;
+      display: block;
+    }
+    .discount-info {
+      padding: 15px;
+    }
+    .discount-info h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .discount-info p {
+      margin: 5px 0;
+    }
+    .price {
+      font-size: 1em;
+    }
+    .price s {
+      color: #888;
+    }
+    .label-discount {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #ff004c;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    button {
+      background: #ff004c;
+      border: none;
+      color: #fff;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #ff9100;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">🔥 Discount Party - Up To 90% OFF 🔥</div>
+
+  <section class="discount-grid">
+    <div class="discount-card">
+      <span class="label-discount">-75%</span>
+      <img src="stray.jpeg" alt="Stray">
+      <div class="discount-info">
+        <h3>Stray</h3>
+        <p class="price"><s>Rp 599.000</s> → Rp 259.000</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+
+    <div class="discount-card">
+      <span class="label-discount">-60%</span>
+      <img src="fifa.jpeg" alt="FC 25">
+      <div class="discount-info">
+        <h3>FC 25</h3>
+        <p class="price"><s>Rp 750.000</s> → Rp 299.000</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+<script src="steam.js"></script>
+</body>
+</html>
